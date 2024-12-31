@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack for Bihar - Innovate for a Better Bihar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Hack for Bihar</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#tracks">Tracks</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#culture">Culture</a>
+                <a href="#sponsors">Sponsors</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-content">
+            <h1>Hack for Bihar</h1>
+            <p class="tagline">Innovate for a Better Bihar</p>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+            <button class="cta-button">Register Now</button>
+        </div>
+        <div class="hero-carousel" id="heroCarousel">
+            <!-- Carousel items will be added dynamically -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Hack for Bihar</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead-text">Join us in Bihar's largest hackathon where innovation meets impact! We're bringing together the brightest minds to create technological solutions that will shape Bihar's future.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Vision</h4>
+                            <p>Transform Bihar through technology-driven solutions that address real challenges in education, healthcare, agriculture, and sustainability.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Collaboration</h4>
+                            <p>Connect with industry experts, government officials, and fellow innovators to create meaningful solutions for Bihar.</p>
+                        </div>
+                    </div>
+
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h4>500+ Innovators</h4>
+                            <p>Join Bihar's largest tech community</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>20+ Industry Mentors</h4>
+                            <p>Learn from the best in tech</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-trophy"></i>
+                            <h4>₹5 Lakhs Prize Pool</h4>
+                            <p>Turn your ideas into reality</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>48+</h3>
+                        <p>Hours of Hacking</p>
+                        <span class="stat-detail">Non-stop innovation marathon</span>
+                    </div>
+                    <div class="stat-item">
+                        <h3>4</h3>
+                        <p>Impact Tracks</p>
+                        <span class="stat-detail">Focused problem domains</span>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>Industry Partners</p>
+                        <span class="stat-detail">Supporting your journey</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracks Section -->
+    <section id="tracks" class="tracks">
+        <div class="container">
+            <div class="section-header">
+                <h2>Challenge Tracks</h2>
+                <p class="section-description">Choose your innovation path and create solutions that matter. Each track offers unique opportunities to make a real impact in Bihar.</p>
+            </div>
+            
+            <div class="track-grid">
+                <div class="track-card" data-track="education">
+                    <div class="track-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="track-content">
+                        <h3>Education Technology</h3>
+                        <p class="track-description">Transform Bihar's education landscape through innovative digital solutions.</p>
+                        
+                        <div class="track-details">
+                            <div class="problem-statement">
+                                <h4>Problem Statements</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>Digital literacy platforms for rural areas</li>
+                                    <li><i class="fas fa-check-circle"></i>Smart classroom solutions</li>
+                                    <li><i class="fas fa-check-circle"></i>Regional language learning tools</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="track-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-users"></i>
+                                    <span>5000+</span>
+                                    <p>Students Impacted</p>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-school"></i>
+                                    <span>100+</span>
+                                    <p>Schools Reached</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="track-footer">
+                            <div class="prize-pool">
+                                <h4>Prize Pool</h4>
+                                <p>₹1,25,000</p>
+                            </div>
+                            <button class="track-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-card" data-track="healthcare">
+                    <div class="track-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="track-content">
+                        <h3>Healthcare Innovation</h3>
+                        <p class="track-description">Create accessible healthcare solutions for Bihar's diverse population.</p>
+                        
+                        <div class="track-details">
+                            <div class="problem-statement">
+                                <h4>Problem Statements</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>Telemedicine platforms</li>
+                                    <li><i class="fas fa-check-circle"></i>Emergency response systems</li>
+                                    <li><i class="fas fa-check-circle"></i>Health monitoring apps</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="track-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-hospital"></i>
+                                    <span>200+</span>
+                                    <p>Healthcare Centers</p>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-user-md"></i>
+                                    <span>1000+</span>
+                                    <p>Medical Staff</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="track-footer">
+                            <div class="prize-pool">
+                                <h4>Prize Pool</h4>
+                                <p>₹1,25,000</p>
+                            </div>
+                            <button class="track-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-card" data-track="agriculture">
+                    <div class="track-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="track-content">
+                        <h3>Agricultural Tech</h3>
+                        <p class="track-description">Revolutionize farming practices with smart agricultural solutions.</p>
+                        
+                        <div class="track-details">
+                            <div class="problem-statement">
+                                <h4>Problem Statements</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>Smart irrigation systems</li>
+                                    <li><i class="fas fa-check-circle"></i>Crop disease detection</li>
+                                    <li><i class="fas fa-check-circle"></i>Market connectivity apps</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="track-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-tractor"></i>
+                                    <span>10000+</span>
+                                    <p>Farmers Reached</p>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-map"></i>
+                                    <span>15+</span>
+                                    <p>Districts Covered</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="track-footer">
+                            <div class="prize-pool">
+                                <h4>Prize Pool</h4>
+                                <p>₹1,25,000</p>
+                            </div>
+                            <button class="track-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-card" data-track="sustainability">
+                    <div class="track-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <div class="track-content">
+                        <h3>Sustainability Solutions</h3>
+                        <p class="track-description">Build eco-friendly solutions for a sustainable Bihar.</p>
+                        
+                        <div class="track-details">
+                            <div class="problem-statement">
+                                <h4>Problem Statements</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>Waste management systems</li>
+                                    <li><i class="fas fa-check-circle"></i>Renewable energy solutions</li>
+                                    <li><i class="fas fa-check-circle"></i>Water conservation tech</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="track-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-tree"></i>
+                                    <span>50+</span>
+                                    <p>Green Projects</p>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-recycle"></i>
+                                    <span>30+</span>
+                                    <p>Communities</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="track-footer">
+                            <div class="prize-pool">
+                                <h4>Prize Pool</h4>
+                                <p>₹1,25,000</p>
+                            </div>
+                            <button class="track-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2>Event Schedule</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">Day 1 - December 31, 2024</div>
+                    <div class="events">
+                        <div class="event">
+                            <span class="time">09:00 AM</span>
+                            <h4>Registration & Check-in</h4>
+                            <p>Get your participant kit and setup your workspace</p>
+                        </div>
+                        <div class="event">
+                            <span class="time">10:00 AM</span>
+                            <h4>Opening Ceremony</h4>
+                            <p>Welcome address and track announcements</p>
+                        </div>
+                        <div class="event">
+                            <span class="time">11:00 AM</span>
+                            <h4>Hackathon Begins</h4>
+                            <p>Start working on your innovative solutions</p>
+                        </div>
+                        <div class="event">
+                            <span class="time">02:00 PM</span>
+                            <h4>Mentor Sessions</h4>
+                            <p>One-on-one mentoring with industry experts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">Day 2 - January 1, 2025</div>
+                    <div class="events">
+                        <div class="event">
+                            <span class="time">10:00 AM</span>
+                            <h4>Progress Check</h4>
+                            <p>Mid-way evaluation and feedback</p>
+                        </div>
+                        <div class="event">
+                            <span class="time">02:00 PM</span>
+                            <h4>Workshop Sessions</h4>
+                            <p>Technical workshops and skill-building sessions</p>
+                        </div>
+                        <div class="event">
+                            <span class="time">11:00 PM</span>
+                            <h4>Final Submissions</h4>
+                            <p>Submit your projects for evaluation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="culture">
+        <div class="container">
+            <h2>Cultural Heritage</h2>
+            <div class="culture-intro">
+                <p>Bihar's rich cultural heritage spans millennia, from ancient seats of learning to vibrant art forms. Our hackathon draws inspiration from this legacy of innovation and creativity.</p>
+            </div>
+            <div class="culture-gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1599030302851-1c1d62d2c123?auto=format&fit=crop&w=800&q=80" alt="Temple Architecture">
+                    <div class="overlay">
+                        <h3>Ancient Architecture</h3>
+                        <p>Rich heritage of Bihar's temples</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=800&q=80" alt="Education">
+                    <div class="overlay">
+                        <h3>Education Legacy</h3>
+                        <p>Continuing the tradition of learning</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1582560475093-ba66accbc424?auto=format&fit=crop&w=800&q=80" alt="Art and Culture">
+                    <div class="overlay">
+                        <h3>Cultural Arts</h3>
+                        <p>Traditional artforms of Bihar</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1515404929826-76fff9fef6fe?auto=format&fit=crop&w=800&q=80" alt="Festival Celebration">
+                    <div class="overlay">
+                        <h3>Festivals</h3>
+                        <p>Celebrating rich traditions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors">
+        <div class="container">
+            <h2>Our Sponsors</h2>
+            <div class="sponsor-tiers">
+                <div class="tier platinum">
+                    <h3>Platinum Sponsors</h3>
+                    <div class="sponsor-grid">
+                        <div class="sponsor-item">
+                            <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=300&q=80" alt="Sponsor 1">
+                        </div>
+                        <div class="sponsor-item">
+                            <img src="https://images.unsplash.com/photo-1554774853-719586f82d77?auto=format&fit=crop&w=300&q=80" alt="Sponsor 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="tier gold">
+                    <h3>Gold Sponsors</h3>
+                    <div class="sponsor-grid">
+                        <div class="sponsor-item">
+                            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=300&q=80" alt="Sponsor 3">
+                        </div>
+                        <div class="sponsor-item">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=300&q=80" alt="Sponsor 4">
+                        </div>
+                        <div class="sponsor-item">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=300&q=80" alt="Sponsor 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>contact@hack4bihar.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 XXXXXXXXXX</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Patna, Bihar, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h3>Hack for Bihar</h3>
+                        <p>Empowering innovation for a better tomorrow. Join us in transforming Bihar through technology.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Visit our Facebook page">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Follow us on Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Follow us on Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Join our LinkedIn network">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#tracks">Tracks</a></li>
+                            <li><a href="#schedule">Schedule</a></li>
+                            <li><a href="#sponsors">Sponsors</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Code of Conduct</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Guidelines</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:contact@hackforbihar.com">contact@hackforbihar.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+919876543210">+91 987 654 3210</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Patna, Bihar, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Hack for Bihar. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <span class="separator">|</span>
+                        <a href="#">Terms of Service</a>
+                        <span class="separator">|</span>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-decoration">
+            <div class="decoration-item"></div>
+            <div class="decoration-item"></div>
+            <div class="decoration-item"></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
