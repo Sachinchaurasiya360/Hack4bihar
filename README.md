@@ -12,21 +12,6 @@ A dynamic and engaging website for the Hack for Bihar hackathon, designed to sho
 - Contact form with validation
 - Modern UI with animations
 
-## Project Structure
-
-```
-hack-for-bihar/
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-├── images/
-│   ├── hero-bg.jpg
-│   ├── mahabodhi.jpg
-│   ├── nalanda.jpg
-│   └── madhubani.jpg
-└── index.html
-```
 
 ## Setup Instructions
 
@@ -42,13 +27,7 @@ hack-for-bihar/
 - Font Awesome Icons
 - Google Fonts (Poppins)
 
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
+#
 ## Contributing
 
 Feel free to submit issues and enhancement requests.

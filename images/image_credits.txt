@@ -1,8 +1,0 @@
-Image Credits:
-
-1. hero-bg.jpg: https://images.unsplash.com/photo-1604693701546-50b1aa1f95a7
-2. mahabodhi.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mahabodhi_Temple.jpg/1200px-Mahabodhi_Temple.jpg
-3. nalanda.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nalanda_University_Ruins.jpg/1200px-Nalanda_University_Ruins.jpg
-4. madhubani.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Madhubani_Painting_Bihar.jpg/1200px-Madhubani_Painting_Bihar.jpg
-5. culture1.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chhath_Puja_Celebration.jpg/1200px-Chhath_Puja_Celebration.jpg
-6. culture2.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Bihar_Museum.jpg/1200px-Bihar_Museum.jpg

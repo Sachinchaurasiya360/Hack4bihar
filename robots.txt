@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Sitemap: https://hack4bihar.live/sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 10
+
+# Prevent caching of certain files
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+
+# Allow social media crawlers
+User-agent: Twitterbot
+Allow: /images/
+
+User-agent: facebookexternalhit
+Allow: /images/

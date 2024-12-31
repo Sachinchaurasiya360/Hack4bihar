@@ -1,22 +1,23 @@
 // Countdown Timer
 function updateCountdown() {
-    const hackathonDate = new Date('2024-12-31T23:59:59').getTime();
+    const eventDate = new Date('June 13, 2025 09:00:00').getTime();
     const now = new Date().getTime();
-    const timeLeft = hackathonDate - now;
+    const timeLeft = eventDate - now;
 
     const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-    document.getElementById('days').innerText = String(days).padStart(2, '0');
-    document.getElementById('hours').innerText = String(hours).padStart(2, '0');
-    document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
-    document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+    document.getElementById('days').textContent = days.toString().padStart(2, '0');
+    document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
 }
 
+// Update countdown every second
 setInterval(updateCountdown, 1000);
-updateCountdown();
+updateCountdown(); // Initial call
 
 // Hero Carousel
 const carouselImages = [
@@ -51,6 +52,35 @@ function nextSlide() {
 }
 
 // Change slide every 5 seconds
+setInterval(nextSlide, 5000);
+
+// Slider functionality
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.slider-dot');
+let sliderCurrentSlide = 0;
+
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+}
+
+function nextSlide() {
+    sliderCurrentSlide = (sliderCurrentSlide + 1) % slides.length;
+    showSlide(sliderCurrentSlide);
+}
+
+// Add click events to dots
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        sliderCurrentSlide = index;
+        showSlide(sliderCurrentSlide);
+    });
+});
+
+// Auto advance slides
 setInterval(nextSlide, 5000);
 
 // Mobile Navigation
@@ -98,4 +128,29 @@ const observer = new IntersectionObserver((entries) => {
 // Observe all sections for animation
 document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
+});
+
+// Schedule Tabs
+document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const timelines = document.querySelectorAll('.timeline');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const day = button.getAttribute('data-day');
+            
+            // Update active state of buttons
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            
+            // Show corresponding timeline
+            timelines.forEach(timeline => {
+                if (timeline.getAttribute('data-day') === day) {
+                    timeline.classList.add('active');
+                } else {
+                    timeline.classList.remove('active');
+                }
+            });
+        });
+    });
 });

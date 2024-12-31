@@ -3,14 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hack for Bihar - Innovate for a Better Bihar</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Hack 4 Bihar 2024 - Bihar's Premier Hackathon Event</title>
+    <meta name="title" content="Hack 4 Bihar 2024 - Bihar's Premier Hackathon Event">
+    <meta name="description" content="Join Bihar's largest hackathon to innovate, collaborate, and build solutions for a better Bihar. ₹5 Lakhs in prizes, expert mentorship, and networking opportunities await!">
+    <meta name="keywords" content="hackathon, Bihar hackathon, tech event Bihar, coding competition, innovation Bihar, Hack 4 Bihar, student hackathon, technology event">
+    <meta name="author" content="Hack 4 Bihar Team">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hack4bihar.com/">
+    <meta property="og:title" content="Hack 4 Bihar 2024 - Bihar's Premier Hackathon Event">
+    <meta property="og:description" content="Join Bihar's largest hackathon to innovate, collaborate, and build solutions for a better Bihar. ₹5 Lakhs in prizes, expert mentorship, and networking opportunities await!">
+    <meta property="og:image" content="https://hack4bihar.com/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hack4bihar.com/">
+    <meta property="twitter:title" content="Hack 4 Bihar 2024 - Bihar's Premier Hackathon Event">
+    <meta property="twitter:description" content="Join Bihar's largest hackathon to innovate, collaborate, and build solutions for a better Bihar. ₹5 Lakhs in prizes, expert mentorship, and networking opportunities await!">
+    <meta property="twitter:image" content="https://hack4bihar.com/images/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#0a1930">
+
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://hack4bihar.com/">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Hack 4 Bihar 2024",
+        "description": "Bihar's largest hackathon focused on innovation and technology solutions for regional development",
+        "startDate": "2024-03-15T09:00",
+        "endDate": "2024-03-16T18:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+            "@type": "Place",
+            "name": "Hack 4 Bihar Venue",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Patna",
+                "addressRegion": "Bihar",
+                "addressCountry": "IN"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Hack 4 Bihar",
+            "url": "https://hack4bihar.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2024-01-01T00:00"
+        },
+        "image": [
+            "https://hack4bihar.com/images/og-image.jpg"
+        ],
+        "performer": {
+            "@type": "Organization",
+            "name": "Hack 4 Bihar Team"
+        }
+    }
+    </script>
+
     <!-- Navigation -->
     <nav class="navbar">
+        <div class="nav-brand">
+            <a href="#home">
+                <img src="images/web logo.png" alt="Hack 4 Bihar Logo" class="nav-logo">
+            </a>
+        </div>
         <div class="container">
             <div class="logo">
                 <h1>Hack for Bihar</h1>
@@ -33,11 +115,21 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1920&q=80');">
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('images/vishwa-shanti-stupa-rajgir.jpg')"></div>
+            <div class="slide" style="background-image: url('images/Darbhanga.png')"></div>
+            <div class="slide" style="background-image: url('images/Best-Time-To-Visit-273.jpg')"></div>
+            <div class="slide" style="background-image: url('images/istockphoto-1350971842-612x612.jpg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Hack for Bihar</h1>
-            <p class="tagline">Innovate for a Better Bihar</p>
-            <div class="countdown" id="countdown">
+            <div class="hero-text">
+                <h1>Hack 4 Bihar</h1>
+                <p class="tagline">Innovating for Bihar's Future</p>
+                <p class="event-date">13th-14th June 2025</p>
+            </div>
+            <div class="countdown">
                 <div class="countdown-item">
                     <span id="days">00</span>
                     <p>Days</p>
@@ -55,67 +147,73 @@
                     <p>Seconds</p>
                 </div>
             </div>
-            <button class="cta-button">Register Now</button>
+            <div class="hero-cta">
+                <a href="https://hack4bihar.live" class="cta-button">Register Now</a>
+            </div>
         </div>
-        <div class="hero-carousel" id="heroCarousel">
-            <!-- Carousel items will be added dynamically -->
+        <div class="slider-nav">
+            <div class="slider-dot active"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Hack for Bihar</h2>
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-header">
+                <h2>About Hack4Bihar</h2>
+                <div class="underline"></div>
+            </div>
+            
             <div class="about-content">
                 <div class="about-text">
-                    <p class="lead-text">Join us in Bihar's largest hackathon where innovation meets impact! We're bringing together the brightest minds to create technological solutions that will shape Bihar's future.</p>
-                    
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-rocket"></i>
-                            <h4>Vision</h4>
-                            <p>Transform Bihar through technology-driven solutions that address real challenges in education, healthcare, agriculture, and sustainability.</p>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-handshake"></i>
-                            <h4>Collaboration</h4>
-                            <p>Connect with industry experts, government officials, and fellow innovators to create meaningful solutions for Bihar.</p>
+                    <div class="text-content">
+                        <span class="highlight-tag">Bihar's Premier Hackathon</span>
+                        <h3>Innovate for Bihar</h3>
+                        <p>Join us in this 36-hour coding marathon where innovation meets impact. Hack4Bihar brings together the brightest minds to solve real-world challenges facing Bihar.</p>
+                        
+                        <div class="key-points">
+                            <div class="point">
+                                <i class="fas fa-users"></i>
+                                <span>500+ Participants</span>
+                            </div>
+                            <div class="point">
+                                <i class="fas fa-code"></i>
+                                <span>36 Hours of Coding</span>
+                            </div>
+                            <div class="point">
+                                <i class="fas fa-trophy"></i>
+                                <span>₹5 Lakhs Prize Pool</span>
+                            </div>
                         </div>
                     </div>
-
+                    
                     <div class="features">
-                        <div class="feature">
-                            <i class="fas fa-users"></i>
-                            <h4>500+ Innovators</h4>
-                            <p>Join Bihar's largest tech community</p>
-                        </div>
-                        <div class="feature">
+                        <div class="feature-box">
                             <i class="fas fa-laptop-code"></i>
-                            <h4>20+ Industry Mentors</h4>
-                            <p>Learn from the best in tech</p>
+                            <h4>Code</h4>
+                            <p>Build innovative solutions</p>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-trophy"></i>
-                            <h4>₹5 Lakhs Prize Pool</h4>
-                            <p>Turn your ideas into reality</p>
+                        <div class="feature-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Learn</h4>
+                            <p>Expert mentorship</p>
                         </div>
+                        <div class="feature-box">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Network</h4>
+                            <p>Connect with peers</p>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h3>48+</h3>
-                        <p>Hours of Hacking</p>
-                        <span class="stat-detail">Non-stop innovation marathon</span>
-                    </div>
-                    <div class="stat-item">
-                        <h3>4</h3>
-                        <p>Impact Tracks</p>
-                        <span class="stat-detail">Focused problem domains</span>
-                    </div>
-                    <div class="stat-item">
-                        <h3>20+</h3>
-                        <p>Industry Partners</p>
-                        <span class="stat-detail">Supporting your journey</span>
+                
+                <div class="about-image">
+                    <img src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg" alt="Hackathon Illustration">
+                    <div class="register-overlay">
+                        <a href="#register" class="register-btn">Register Now</a>
                     </div>
                 </div>
             </div>
@@ -305,182 +403,261 @@
     <!-- Schedule Section -->
     <section id="schedule" class="schedule">
         <div class="container">
-            <h2>Event Schedule</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="date">Day 1 - December 31, 2024</div>
-                    <div class="events">
-                        <div class="event">
+            <div class="section-header">
+                <h2>Event Schedule</h2>
+                <div class="underline"></div>
+                <p class="section-description">Join us for an exciting 36-hour journey of innovation and creativity</p>
+            </div>
+            
+            <div class="schedule-tabs">
+                <button class="tab-btn active" data-day="1">Day 1</button>
+                <button class="tab-btn" data-day="2">Day 2</button>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline active" data-day="1">
+                    <div class="timeline-item">
+                        <div class="time-block">
                             <span class="time">09:00 AM</span>
+                            <div class="time-line">
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="event-content">
                             <h4>Registration & Check-in</h4>
                             <p>Get your participant kit and setup your workspace</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Main Hall</span>
+                                <span><i class="fas fa-clock"></i> 1 hour</span>
+                            </div>
                         </div>
-                        <div class="event">
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-block">
                             <span class="time">10:00 AM</span>
+                            <div class="time-line">
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="event-content">
                             <h4>Opening Ceremony</h4>
                             <p>Welcome address and track announcements</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Auditorium</span>
+                                <span><i class="fas fa-clock"></i> 1 hour</span>
+                            </div>
                         </div>
-                        <div class="event">
+                    </div>
+
+                    <div class="timeline-item highlight">
+                        <div class="time-block">
                             <span class="time">11:00 AM</span>
+                            <div class="time-line">
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="event-content">
                             <h4>Hackathon Begins</h4>
                             <p>Start working on your innovative solutions</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> All Venues</span>
+                                <span><i class="fas fa-clock"></i> 36 hours</span>
+                            </div>
                         </div>
-                        <div class="event">
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-block">
                             <span class="time">02:00 PM</span>
+                            <div class="time-line">
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="event-content">
                             <h4>Mentor Sessions</h4>
                             <p>One-on-one mentoring with industry experts</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Mentoring Zones</span>
+                                <span><i class="fas fa-clock"></i> 3 hours</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="date">Day 2 - January 1, 2025</div>
-                    <div class="events">
-                        <div class="event">
+
+                <div class="timeline" data-day="2">
+                    <div class="timeline-item">
+                        <div class="time-block">
                             <span class="time">10:00 AM</span>
+                            <div class="time-line">
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="event-content">
                             <h4>Progress Check</h4>
                             <p>Mid-way evaluation and feedback</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Team Zones</span>
+                                <span><i class="fas fa-clock"></i> 2 hours</span>
+                            </div>
                         </div>
-                        <div class="event">
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-block">
                             <span class="time">02:00 PM</span>
+                            <div class="time-line">
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="event-content">
                             <h4>Workshop Sessions</h4>
                             <p>Technical workshops and skill-building sessions</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Workshop Rooms</span>
+                                <span><i class="fas fa-clock"></i> 2 hours</span>
+                            </div>
                         </div>
-                        <div class="event">
+                    </div>
+
+                    <div class="timeline-item highlight">
+                        <div class="time-block">
                             <span class="time">11:00 PM</span>
+                            <div class="time-line">
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="event-content">
                             <h4>Final Submissions</h4>
                             <p>Submit your projects for evaluation</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Submission Portal</span>
+                                <span><i class="fas fa-clock"></i> 1 hour</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Culture Section -->
-    <section id="culture" class="culture">
-        <div class="container">
-            <h2>Cultural Heritage</h2>
-            <div class="culture-intro">
-                <p>Bihar's rich cultural heritage spans millennia, from ancient seats of learning to vibrant art forms. Our hackathon draws inspiration from this legacy of innovation and creativity.</p>
-            </div>
-            <div class="culture-gallery">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1599030302851-1c1d62d2c123?auto=format&fit=crop&w=800&q=80" alt="Temple Architecture">
-                    <div class="overlay">
-                        <h3>Ancient Architecture</h3>
-                        <p>Rich heritage of Bihar's temples</p>
-                    </div>
+        </section>
+    
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <div class="underline"></div>
+                    <p class="section-description">Have questions about the hackathon? We're here to help!</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=800&q=80" alt="Education">
-                    <div class="overlay">
-                        <h3>Education Legacy</h3>
-                        <p>Continuing the tradition of learning</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1582560475093-ba66accbc424?auto=format&fit=crop&w=800&q=80" alt="Art and Culture">
-                    <div class="overlay">
-                        <h3>Cultural Arts</h3>
-                        <p>Traditional artforms of Bihar</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1515404929826-76fff9fef6fe?auto=format&fit=crop&w=800&q=80" alt="Festival Celebration">
-                    <div class="overlay">
-                        <h3>Festivals</h3>
-                        <p>Celebrating rich traditions</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sponsors Section -->
-    <section id="sponsors" class="sponsors">
-        <div class="container">
-            <h2>Our Sponsors</h2>
-            <div class="sponsor-tiers">
-                <div class="tier platinum">
-                    <h3>Platinum Sponsors</h3>
-                    <div class="sponsor-grid">
-                        <div class="sponsor-item">
-                            <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=300&q=80" alt="Sponsor 1">
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h3>Send us a Message</h3>
+                            <p>Fill out the form below and we'll get back to you soon.</p>
                         </div>
-                        <div class="sponsor-item">
-                            <img src="https://images.unsplash.com/photo-1554774853-719586f82d77?auto=format&fit=crop&w=300&q=80" alt="Sponsor 2">
-                        </div>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <input type="text" name="name" placeholder="Your Name" required>
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" name="email" placeholder="Your Email" required>
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <select name="subject" required>
+                                    <option value="" disabled selected>Select Topic</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="sponsorship">Sponsorship</option>
+                                    <option value="registration">Registration</option>
+                                    <option value="technical">Technical Support</option>
+                                </select>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="input-group">
+                                <textarea name="message" placeholder="Your Message" required></textarea>
+                                <i class="fas fa-comment-alt"></i>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                Send Message
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
                     </div>
-                </div>
-                <div class="tier gold">
-                    <h3>Gold Sponsors</h3>
-                    <div class="sponsor-grid">
-                        <div class="sponsor-item">
-                            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=300&q=80" alt="Sponsor 3">
+                    <div class="contact-info">
+                        <div class="info-card location">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Location</h3>
+                                <p>Patna, Bihar, India</p>
+                            </div>
                         </div>
-                        <div class="sponsor-item">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=300&q=80" alt="Sponsor 4">
+                        <div class="info-card email">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p>contact@hack4bihar.com</p>
+                            </div>
                         </div>
-                        <div class="sponsor-item">
-                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=300&q=80" alt="Sponsor 5">
+                        <div class="info-card phone">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Phone</h3>
+                                <p>+91 XXXXXXXXXX</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Your Message" required></textarea>
-                        <button type="submit" class="submit-button">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>contact@hack4bihar.com</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+91 XXXXXXXXXX</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Patna, Bihar, India</p>
+                        <div class="social-connect">
+                            <h3>Connect With Us</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Discord">
+                                    <i class="fab fa-discord"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    
+        <!-- Footer -->
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-top">
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand">
-                        <h3>Hack for Bihar</h3>
-                        <p>Empowering innovation for a better tomorrow. Join us in transforming Bihar through technology.</p>
+                        <img src="images/web logo.png" alt="Hack 4 Bihar Logo" class="footer-logo">
+                        <p class="footer-description">Bihar's Premier Hackathon fostering innovation and technological advancement in our state.</p>
                         <div class="social-links">
-                            <a href="#" class="social-link" aria-label="Visit our Facebook page">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="social-link" aria-label="Follow us on Twitter">
+                            <a href="https://twitter.com/hack4bihar" target="_blank" class="social-link">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#" class="social-link" aria-label="Follow us on Instagram">
+                            <a href="https://instagram.com/hack4bihar" target="_blank" class="social-link">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="social-link" aria-label="Join our LinkedIn network">
-                                <i class="fab fa-linkedin-in"></i>
+                            <a href="https://linkedin.com/company/hack4bihar" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://facebook.com/hack4bihar" target="_blank" class="social-link">
+                                <i class="fab fa-facebook"></i>
                             </a>
                         </div>
                     </div>
@@ -488,7 +665,7 @@
                     <div class="footer-links">
                         <h4>Quick Links</h4>
                         <ul>
-                            <li><a href="#about">About</a></li>
+                            <li><a href="#about">About Us</a></li>
                             <li><a href="#tracks">Tracks</a></li>
                             <li><a href="#schedule">Schedule</a></li>
                             <li><a href="#sponsors">Sponsors</a></li>
@@ -502,51 +679,34 @@
                             <li><a href="#">Code of Conduct</a></li>
                             <li><a href="#">FAQs</a></li>
                             <li><a href="#">Guidelines</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-contact">
-                        <h4>Contact Us</h4>
+                        <h4>Contact Info</h4>
                         <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <a href="mailto:contact@hackforbihar.com">contact@hackforbihar.com</a>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <a href="tel:+919876543210">+91 987 654 3210</a>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p>Patna, Bihar, India</p>
-                            </div>
+                            <p><i class="fas fa-envelope"></i> contact@hack4bihar.com</p>
+                            <p><i class="fas fa-phone"></i> +91 XXXXXXXXXX</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Patna, Bihar, India</p>
+                        </div>
+                        <div class="newsletter">
+                            <h4>Stay Updated</h4>
+                            <form class="newsletter-form">
+                                <input type="email" placeholder="Enter your email">
+                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="footer-bottom">
             <div class="container">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2024 Hack for Bihar. All rights reserved.</p>
-                    <div class="footer-bottom-links">
-                        <a href="#">Privacy Policy</a>
-                        <span class="separator">|</span>
-                        <a href="#">Terms of Service</a>
-                        <span class="separator">|</span>
-                        <a href="#">Cookie Policy</a>
-                    </div>
+                <p>&copy; 2024 Hack 4 Bihar. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <span class="separator">|</span>
                 </div>
             </div>
-        </div>
-
-        <div class="footer-decoration">
-            <div class="decoration-item"></div>
-            <div class="decoration-item"></div>
-            <div class="decoration-item"></div>
         </div>
     </footer>
 
