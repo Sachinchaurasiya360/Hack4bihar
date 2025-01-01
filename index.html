@@ -14,17 +14,17 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hack4bihar.com/">
+    <meta property="og:url" content="https://hack4bihar.live/">
     <meta property="og:title" content="Hack 4 Bihar 2024 - Bihar's Premier Hackathon Event">
     <meta property="og:description" content="Join Bihar's largest hackathon to innovate, collaborate, and build solutions for a better Bihar. ₹5 Lakhs in prizes, expert mentorship, and networking opportunities await!">
-    <meta property="og:image" content="https://hack4bihar.com/images/og-image.jpg">
+    <meta property="og:image" content="https://hack4bihar.live/images/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://hack4bihar.com/">
+    <meta property="twitter:url" content="https://hack4bihar.live/">
     <meta property="twitter:title" content="Hack 4 Bihar 2024 - Bihar's Premier Hackathon Event">
     <meta property="twitter:description" content="Join Bihar's largest hackathon to innovate, collaborate, and build solutions for a better Bihar. ₹5 Lakhs in prizes, expert mentorship, and networking opportunities await!">
-    <meta property="twitter:image" content="https://hack4bihar.com/images/twitter-image.jpg">
+    <meta property="twitter:image" content="https://hack4bihar.live/images/twitter-image.jpg">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -34,13 +34,22 @@
     <meta name="theme-color" content="#0a1930">
 
     <!-- Canonical URL -->
-    <meta rel="canonical" href="https://hack4bihar.com/">
+    <meta rel="canonical" href="https://hack4bihar.live/">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Initialize EmailJS with public key
+            emailjs.init('fybrVUXzlaLXc_fRJ');
+        })();
+    </script>
 </head>
 <body>
     <!-- JSON-LD Structured Data -->
@@ -48,7 +57,7 @@
     {
         "@context": "https://schema.org",
         "@type": "Event",
-        "name": "Hack 4 Bihar 2024",
+        "name": "Hack 4 Bihar",
         "description": "Bihar's largest hackathon focused on innovation and technology solutions for regional development",
         "startDate": "2024-03-15T09:00",
         "endDate": "2024-03-16T18:00",
@@ -67,7 +76,7 @@
         "organizer": {
             "@type": "Organization",
             "name": "Hack 4 Bihar",
-            "url": "https://hack4bihar.com"
+            "url": "https://hack4bihar.live"
         },
         "offers": {
             "@type": "Offer",
@@ -77,7 +86,7 @@
             "validFrom": "2024-01-01T00:00"
         },
         "image": [
-            "https://hack4bihar.com/images/og-image.jpg"
+            "https://hack4bihar.live/images/og-image.jpg"
         ],
         "performer": {
             "@type": "Organization",
@@ -88,16 +97,13 @@
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-brand">
-            <a href="#home">
-                <img src="images/web logo.png" alt="Hack 4 Bihar Logo" class="nav-logo">
-            </a>
-        </div>
-        <div class="container">
-            <div class="logo">
-                <h1>Hack for Bihar</h1>
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home">
+                    <img src="images/web logo.png" alt="Hack 4 Bihar Logo" class="nav-logo">
+                </a>
             </div>
-            <div class="nav-links">
+            <div class="nav-menu">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#tracks">Tracks</a>
@@ -106,11 +112,11 @@
                 <a href="#sponsors">Sponsors</a>
                 <a href="#contact">Contact</a>
             </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
 
@@ -127,7 +133,15 @@
             <div class="hero-text">
                 <h1>Hack 4 Bihar</h1>
                 <p class="tagline">Innovating for Bihar's Future</p>
-                <p class="event-date">13th-14th June 2025</p>
+                <div class="event-date">
+                    <h3>Event Date</h3>
+                    <p>To be announced</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#register" class="cta-button primary">Register Now</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWJDFrfC-8ZgYdHrTv76f3IN9rhDs77u3k09ROxQDo1O77wg/viewform?usp=sharing" class="cta-button secondary">Become Community Partner</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWJDFrfC-8ZgYdHrTv76f3IN9rhDs77u3k09ROxQDo1O77wg/viewform?usp=sharing" class="cta-button secondary">Become Ambassador</a>
+                </div>
             </div>
             <div class="countdown">
                 <div class="countdown-item">
@@ -147,9 +161,9 @@
                     <p>Seconds</p>
                 </div>
             </div>
-            <div class="hero-cta">
+            <!-- <div class="hero-cta">
                 <a href="https://hack4bihar.live" class="cta-button">Register Now</a>
-            </div>
+            </div> -->
         </div>
         <div class="slider-nav">
             <div class="slider-dot active"></div>
@@ -556,19 +570,19 @@
                             <h3>Send us a Message</h3>
                             <p>Fill out the form below and we'll get back to you soon.</p>
                         </div>
-                        <form class="contact-form" id="contactForm">
+                        <form class="contact-form" id="contact-form" onsubmit="return sendEmail(event)">
                             <div class="form-row">
                                 <div class="input-group">
-                                    <input type="text" name="name" placeholder="Your Name" required>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
                                     <i class="fas fa-user"></i>
                                 </div>
                                 <div class="input-group">
-                                    <input type="email" name="email" placeholder="Your Email" required>
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
                                     <i class="fas fa-envelope"></i>
                                 </div>
                             </div>
                             <div class="input-group">
-                                <select name="subject" required>
+                                <select id="subject" name="subject" required>
                                     <option value="" disabled selected>Select Topic</option>
                                     <option value="general">General Inquiry</option>
                                     <option value="sponsorship">Sponsorship</option>
@@ -578,16 +592,23 @@
                                 <i class="fas fa-chevron-down"></i>
                             </div>
                             <div class="input-group">
-                                <textarea name="message" placeholder="Your Message" required></textarea>
+                                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
                                 <i class="fas fa-comment-alt"></i>
                             </div>
-                            <button type="submit" class="submit-button">
-                                Send Message
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="loading-spinner" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </span>
                                 <i class="fas fa-paper-plane"></i>
                             </button>
                         </form>
                     </div>
                     <div class="contact-info">
+                        <!-- <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hack4bihar@gmail.com">hack4bihar@gmail.com</a>
+                        </div> -->
                         <div class="info-card location">
                             <div class="info-icon">
                                 <i class="fas fa-map-marker-alt"></i>
@@ -603,7 +624,7 @@
                             </div>
                             <div class="info-content">
                                 <h3>Email</h3>
-                                <p>contact@hack4bihar.com</p>
+                                <p>hack4bihar@gmail.com</p>
                             </div>
                         </div>
                         <div class="info-card phone">
@@ -612,19 +633,19 @@
                             </div>
                             <div class="info-content">
                                 <h3>Phone</h3>
-                                <p>+91 XXXXXXXXXX</p>
+                                <p>+91 7070416209</p>
                             </div>
                         </div>
                         <div class="social-connect">
                             <h3>Connect With Us</h3>
                             <div class="social-icons">
-                                <a href="#" class="social-icon" aria-label="Twitter">
+                                <a href="https://twitter.com/hack4bihar" class="social-icon" aria-label="Twitter">
                                     <i class="fab fa-twitter"></i>
                                 </a>
-                                <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <a href="https://linkedin.com/company/hack4bihar" class="social-icon" aria-label="LinkedIn">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="social-icon" aria-label="Instagram">
+                                <a href="https://instagram.com/hack4bihar" class="social-icon" aria-label="Instagram">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                                 <a href="#" class="social-icon" aria-label="Discord">
@@ -637,7 +658,6 @@
             </div>
         </section>
     
-        <!-- Footer -->
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-top">
@@ -685,17 +705,11 @@
                     <div class="footer-contact">
                         <h4>Contact Info</h4>
                         <div class="contact-info">
-                            <p><i class="fas fa-envelope"></i> contact@hack4bihar.com</p>
-                            <p><i class="fas fa-phone"></i> +91 XXXXXXXXXX</p>
+                            <p><i class="fas fa-envelope"></i> hack4bihar@gmail.com</p>
+                            <p><i class="fas fa-phone"></i> +91 7070416209</p>
                             <p><i class="fas fa-map-marker-alt"></i> Patna, Bihar, India</p>
                         </div>
-                        <div class="newsletter">
-                            <h4>Stay Updated</h4>
-                            <form class="newsletter-form">
-                                <input type="email" placeholder="Enter your email">
-                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                            </form>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

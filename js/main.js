@@ -83,8 +83,24 @@ dots.forEach((dot, index) => {
 // Auto advance slides
 setInterval(nextSlide, 5000);
 
-// Mobile Navigation
+// Navbar Toggle
 const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// Close menu when clicking a link
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
+// Mobile Navigation
 const navLinks = document.querySelector('.nav-links');
 
 hamburger.addEventListener('click', () => {
@@ -101,15 +117,72 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Contact Form EmailJS Integration
+function sendEmail(event) {
+    event.preventDefault();
+    
+    // Get the form elements
+    const form = document.getElementById('contact-form');
+    const name = form.querySelector('#name').value;
+    const email = form.querySelector('#email').value;
+    const subject = form.querySelector('#subject').value;
+    const message = form.querySelector('#message').value;
+    
+    // Show loading spinner
+    const submitBtn = form.querySelector('.submit-btn');
+    const btnText = submitBtn.querySelector('.btn-text');
+    const spinner = submitBtn.querySelector('.loading-spinner');
+    
+    btnText.style.display = 'none';
+    spinner.style.display = 'block';
+    submitBtn.disabled = true;
+
+    // EmailJS send
+    emailjs.send('default_service', 'template_2nil198', {
+        from_name: name,
+        reply_to: email,
+        subject: subject,
+        message: message,
+        to_email: 'mrsachinchaurasiya@gmail.com'
+    })
+    .then(function(response) {
+        // Success
+        showNotification('Message sent successfully!', 'success');
+        form.reset();
+    })
+    .catch(function(error) {
+        // Error
+        console.error('EmailJS error:', error);
+        showNotification('Failed to send message. Please try again.', 'error');
+    })
+    .finally(function() {
+        // Reset button state
+        btnText.style.display = 'block';
+        spinner.style.display = 'none';
+        submitBtn.disabled = false;
+    });
+
+    return false;
+}
+
+// Notification function
+function showNotification(message, type) {
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    notification.textContent = message;
+    
+    document.body.appendChild(notification);
+    
+    // Remove notification after 3 seconds
+    setTimeout(() => {
+        notification.remove();
+    }, 3000);
+}
+
 // Form Submission
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        // Add form submission logic here
-        alert('Thank you for your message! We will get back to you soon.');
-        contactForm.reset();
-    });
+    contactForm.addEventListener('submit', sendEmail);
 }
 
 // Intersection Observer for Animations
