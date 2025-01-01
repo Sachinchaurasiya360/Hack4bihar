@@ -173,6 +173,10 @@
         padding: 2rem 1rem;
     }
 
+    .hero-text img{
+
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
@@ -356,6 +360,8 @@
     .tab-btn {
         width: calc(50% - 0.5rem);
     }
+
+    
 
     .timeline-item {
         flex-direction: column;
@@ -712,6 +718,8 @@
     .contact-form {
         padding: 1.5rem;
     }
+
+    
 }
 
 /* CTA Buttons */
@@ -770,3 +778,20 @@
         max-width: 300px;
     }
 }
+
+@media (max-width: 480px) {
+    .countdown {
+      flex-wrap: wrap; 
+      gap: 7px; 
+    }
+    .countdown-item {
+      flex: 1 1 45%; 
+      margin: 7px 0; 
+    }
+    .countdown-item span {
+      font-size: 1.9rem; 
+    }
+    .countdown-item p {
+      font-size: 0.8rem; 
+    }
+  }

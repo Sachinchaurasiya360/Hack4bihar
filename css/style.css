@@ -166,7 +166,7 @@ body {
     width: 100%;
 }
 
-.hero h1 {
+/* .hero h1 {
     font-size: 4.5rem;
     font-weight: 800;
     color: white;
@@ -180,6 +180,14 @@ body {
     background-size: 200% auto;
     animation: gradient 3s ease infinite;
     line-height: 1.2;
+} */
+
+.hero-text img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 100%; 
+    height: auto;
 }
 
 .tagline {
@@ -203,6 +211,7 @@ body {
 
 .countdown {
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     gap: 2rem;
     margin: 2rem 0;
@@ -211,7 +220,7 @@ body {
 
 .countdown-item {
     background: rgba(255, 255, 255, 0.1);
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 15px;
     min-width: 130px;
     backdrop-filter: blur(10px);
@@ -1186,7 +1195,7 @@ body {
 .info-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+    /* background: linear-gradient(135deg, #ff6b6b, #ff8e53); */
     border-radius: 12px;
     display: flex;
     align-items: center;
