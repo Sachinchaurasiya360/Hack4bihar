@@ -1477,4 +1477,39 @@ body {
     color: rgba(255, 255, 255, 0.1);
 }
 
+
+
+/* partner section */
+
+.partner-section {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background: linear-gradient(135deg, #0a1930 0%, #1a2942 100%);
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  
+  #partner-container {
+    display: flex;
+    gap: 27px;
+    justify-content: center;
+    margin-top: 20px;
+  
+  }
+
+  
+  #partner-container .gif {
+    background: rgb(17, 17, 17,0.2); 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(219, 207, 207, 0.2);
+    max-width: 350px;
+  } 
+  
+  #partner-container .gif:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+  }
 @import url('mobile.css');

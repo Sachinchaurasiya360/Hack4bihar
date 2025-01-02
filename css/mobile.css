@@ -189,7 +189,7 @@
     .about-section {
         padding: 4rem 1rem 2rem;
         margin-top: 70px;
-        background: rgba(10, 25, 48, 0.5);
+        /* background: rgba(10, 25, 48, 0.5) !important; */
     }
 
     .about-container {
@@ -214,7 +214,7 @@
         margin: 0.5rem auto;
         width: 80px;
         height: 3px;
-        background: linear-gradient(90deg, #4a90e2, #67b26f);
+        /* background: linear-gradient(90deg, #4a90e2, #67b26f); */
     }
 
     .about-content {
@@ -266,7 +266,7 @@
     }
 
     .point i {
-        color: #4a90e2;
+        /* color: #4a90e2; */
         font-size: 1.2rem;
     }
 
@@ -296,7 +296,7 @@
     }
 
     .feature-box i {
-        color: #4a90e2;
+        color: #e99622;
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
     }
@@ -553,6 +553,7 @@
 
     /* About Section */
     .about-section {
+        color: #e99622;
         padding: 4rem 1rem 2rem;
         margin-top: 60px;
     }
@@ -622,7 +623,7 @@
     }
 
     .point i {
-        color: #4a90e2;
+        /* color: #4a90e2; */
         font-size: 1.2rem;
     }
 
@@ -652,7 +653,7 @@
     }
 
     .feature-box i {
-        color: #4a90e2;
+        /* color: #4a90e2; */
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
     }
@@ -793,5 +794,22 @@
     }
     .countdown-item p {
       font-size: 0.8rem; 
+    }
+  }
+
+  /* partners */
+  @media (max-width: 600px) {
+    #partner-container {
+      flex-direction: column;
+      gap: 15px; 
+    }
+  
+    #partner-container .gif {
+      max-width: 80%; 
+      margin: 0 auto; 
+    }
+  
+    .section-header h2 {
+      font-size: 1.5rem; 
     }
   }
