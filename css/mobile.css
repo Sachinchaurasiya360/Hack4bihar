@@ -813,3 +813,33 @@
       font-size: 1.5rem; 
     }
   }
+  @media (max-width: 768px) {
+    #partner-container {
+      gap: 15px; 
+    }
+  
+    #partner-container .gif {
+      max-width: 180px; 
+    }
+  
+    .section-header h2 {
+      font-size: 1.8rem; 
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    #partner-container {
+      flex-direction: column; 
+      gap: 10px;
+    }
+  
+    #partner-container .gif {
+      max-width: 80%; 
+      margin: 0 auto; 
+    }
+  
+    .section-header h2 {
+      font-size: 1.5rem; 
+    }
+  }
