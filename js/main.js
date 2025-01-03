@@ -143,7 +143,7 @@ function sendEmail(event) {
         reply_to: email,
         subject: subject,
         message: message,
-        to_email: 'mrsachinchaurasiya@gmail.com'
+        to_email: 'hack4bihar@gmail.com'
     })
     .then(function(response) {
         // Success
